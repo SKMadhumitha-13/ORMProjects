@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <tr>
+                <th>Capital No</th>
+                <th>Capital Name</th>
+                <th>Country Name</th>
+            </tr>
+            {% for to in CATO %}
+            <tr>
+                <td>{{to.Capital_no}}</td>
+                <td>{{to.Capital_name}}</td>
+                <td>{{to.Country_name}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

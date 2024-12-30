@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <tr>
+                <th>Sid</th>
+                <th>Sname</th>
+                <th>Marks</th>
+                <th>Cid</th>
+            </tr>
+            {% for to in STO %}
+            <tr>
+                <td>{{to.SID}}</td>
+                <td>{{to.Sname}}</td>
+                <td>{{to.Marks}}</td>
+                <td>{{to.CID}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

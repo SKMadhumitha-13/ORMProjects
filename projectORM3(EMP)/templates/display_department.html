@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <tr>
+                <th>Department_Name</th>
+            </tr>
+            <tr>
+                <th>Dept_no</th>
+                <th>Dept_name</th>
+                <th>Dept_loc</th>
+            </tr>
+            {% for to in DTO %}
+            <tr>
+                <td>{{to.Dept_no}}</td>
+                <td>{{to.Dept_name}}</td>
+                <td>{{to.Dept_loc}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

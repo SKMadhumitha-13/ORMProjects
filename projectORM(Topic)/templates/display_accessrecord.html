@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Date</th>
+            </tr>
+            {% for to in ATO %}
+            <tr>
+                <td>{{to.name}}</td>
+                <td>{{to.author}}</td>
+                <td>{{to.date}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
